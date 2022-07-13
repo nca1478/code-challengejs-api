@@ -4,6 +4,9 @@ import logger from "morgan";
 import chalk from "chalk";
 import cors from "cors";
 
+// Routes
+import { fileRoutes } from "../api/file";
+
 class Server {
     constructor() {
         this.app = express();
@@ -11,7 +14,7 @@ class Server {
 
         // Settings App
         this.middlewares();
-        // this.routes()
+        this.routes();
     }
 
     middlewares() {
@@ -29,6 +32,10 @@ class Server {
 
         // Static Files
         this.app.use(express.static("public"));
+    }
+
+    routes() {
+        this.app.use("/files", fileRoutes);
     }
 
     listen() {
