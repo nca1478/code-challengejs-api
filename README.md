@@ -28,11 +28,15 @@
 
 ## Demo
 
--   [Code Challenge JS App](https://server.netlify.app/)
+-   [Code Challenge JS App](https://code-challengejs-app.netlify.app/)
 
-## App Repo
+## Frontend Repo
 
 -   [Code Challenge JS App](https://github.com/nca1478/code-challengejs-app)
+
+## Backend Repo
+
+-   [Code Challenge JS Api](https://github.com/nca1478/code-challengejs-api)
 
 ## Requirements
 

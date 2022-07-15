@@ -17,7 +17,10 @@ class FileRouter {
         }
 
         // Get List Files
-        this.router.get("/", this.controller.getFiles.bind(this.controller));
+        this.router.get(
+            "/list",
+            this.controller.getFiles.bind(this.controller)
+        );
 
         // Get File Data
         this.router.get("/data", this.controller.getFile.bind(this.controller));

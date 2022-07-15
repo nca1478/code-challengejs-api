@@ -10,7 +10,7 @@ import { fileRoutes } from "../api/file";
 class Server {
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 4000;
 
         // Settings App
         this.middlewares();
@@ -39,7 +39,7 @@ class Server {
     }
 
     listen() {
-        const port = process.env.PORT;
+        const port = this.port;
         this.app.listen(port, () => {
             console.log(
                 `${chalk.yellow(
